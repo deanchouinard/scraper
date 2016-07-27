@@ -34,4 +34,8 @@ defmodule Scraper do
     #  |> IO.inspect |> download(output_filename)
   end
 
+  defp pb_user do
+    Application.get_env(:scraper, :user)
+  end
+
 end
